@@ -1,0 +1,68 @@
+/* Estos estilos se añaden o modifican para la página del blog */
+
+.blog-content-area {
+    display: flex;
+    flex-grow: 1;
+    gap: 15px;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.blog-post-card {
+    flex: 1; /* Ocupa el espacio restante */
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.post-image:hover {
+    filter: brightness(1);
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.post-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--sims-green);
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.post-text {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ddd;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* La sección de noticias lateral del blog usa los mismos estilos que la de index.html */
+.news-panel {
+    width: 300px;
+    padding: 20px;
+    background: var(--sims-panel-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
